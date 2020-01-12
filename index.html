@@ -150,31 +150,31 @@ clients:
 <div class='editable full '>
   <div class='editable row'>
     <div class='editable large-8 columns large-centered'>
-      <div class="section-title">
+      <div class="editable section-title">
         <p class="small-title">Creative experience</p>
         <h2>
           Creating solutions  <br/> 
           is what we do best.
         </h2>
         <p class="big-size">We are creating solutions for any visual identity project, espetically for digital experiences and brand identities.</p>
-        <div class="four spacing"></div>
+        <div class="editable four spacing"></div>
         <img src="{{ "/assets/images/logo-black.png" | relative_url }}" alt="">
       </div>
     </div>
-    <div class="four spacing"></div>
+    <div class="editable four spacing"></div>
   </div>
 </div>
-<div class="full no-overflow no-padding parallax " style="background-image: url({{ "/assets/images/@stock/about-1.jpg" | relative_url }})">
-  <div class="right-half">
-    <div class="two spacing"></div>
-    <div class="section-header alt white">
+<div class="editable full no-overflow no-padding parallax " style="background-image: url({{ "/assets/images/@stock/about-1.jpg" | relative_url }})">
+  <div class="editable right-half">
+    <div class="editable two spacing"></div>
+    <div class="editable section-header alt white">
       <h2>client focused</h2>
     </div>
     <p class="light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A cupiditate rem aspernatur eos tempora corporis cum consequuntur quasi explicabo, aut omnis, pariatur minus numquam deserunt reprehenderit dignissimos illum voluptas animi!</p>
     <p class="light">Dolor sit amet, consectetur adipisicing elit. Quod, eius optio eum hic dicta veritatis voluptates nisi amet nulla at!</p>
-    <div class="two spacing"></div>
+    <div class="editable two spacing"></div>
     <a href="#" class="button small">Meat the team</a>
-    <div class="three spacing"></div>
+    <div class="editable three spacing"></div>
   </div>
 </div>
 
@@ -183,7 +183,7 @@ clients:
 <div class='editable full'>
   <div class='editable row'>
     <div class='editable large-8 columns large-centered'>
-      <div class="section-title">
+      <div class="editable section-title">
         <p class="small-title">main services</p>
         <h2>We transform business.</h2>
       </div>
@@ -209,7 +209,7 @@ clients:
     </div>
   </div>
 </div>
-<div class="full no-padding ">
+<div class="editable full no-padding ">
   <div class='editable mod modBoxedSlider' data-timeout='1500'>
     <div class='editable slides'>
       {% for image in page.team_slides %}
@@ -256,7 +256,7 @@ clients:
   </div>
 </div> -->
 <div class='editable full dark no-padding '>
-  <div class="four spacing"></div>
+  <div class="editable four spacing"></div>
   <div class='editable row'>
     <div class='editable large-8 columns '>
       <h3 class="white">Customized to meet your needs.</h3>
@@ -282,10 +282,10 @@ clients:
     </div>
   </div>
 </div>
-<div class="full dark-grey no-padding">
-  <div class="members ">
+<div class="editable full dark-grey no-padding">
+  <div class="editable members ">
     {% for member in page.members %}
-      <div class="small-3 columns">
+      <div class="editable small-3 columns">
         <div class='editable member-avatar'>
           <img class="avatar" alt="" src="{{ member.avatar | relative_url }}" />
         </div>
@@ -293,10 +293,10 @@ clients:
     {% endfor %}
   </div>
 </div>
-<div class="full no-padding team-bg ">
-  <div class="div member-decs">
+<div class="editable full no-padding team-bg ">
+  <div class="editable div member-decs">
     {% for member in page.members %}
-      <div class="large-3 columns">
+      <div class="editable large-3 columns">
         <div class='editable member-dec'>
           <div class='editable intro'>
             <h3>{{ member.name | escape }}</h3>
@@ -316,7 +316,7 @@ clients:
       </div>
     {% endfor %}
   </div>
-  <div class="four spacing"></div>
+  <div class="editable four spacing"></div>
 </div>
 
 <!-- 
@@ -328,7 +328,7 @@ clients:
     </div>
   </div>
 </div>
-<div class="full grey no-padding no-overflow">
+<div class="editable full grey no-padding no-overflow">
   {% for post in site.posts limit:3 %}
     <div class='editable large-4 columns'>
       <div class='editable mod modBlogPost simple'>
@@ -341,17 +341,17 @@ clients:
           </p>
         </div>
       </div>
-      <div class="four spacing"></div>
+      <div class="editable four spacing"></div>
     </div>
   {% endfor %}
 </div>
  -->
 
 <div class='editable full no-overflow no-padding parallax' style="background-image: url({{ "/assets/images/@stock/customers-bg.jpg" | relative_url }})">
-  <div class="left-half ">
-    <div class="two spacing"></div>
-    <div class="row">
-      <div class="section-header alt white">
+  <div class="editable left-half ">
+    <div class="editable two spacing"></div>
+    <div class="editable row">
+      <div class="editable section-header alt white">
         <h2>The kind of stories we want to highlight</h2>
       </div>
       <div class='editable mod modTestimonials simple'>
@@ -361,7 +361,7 @@ clients:
               {% for t in page.testimonials %}
                 <div class='editable item'>
                   <p class='quote'>{{ t.quote }}</p>
-                  <div class="two spacing"></div>
+                  <div class="editable two spacing"></div>
                   <div class='editable author'>
                     <p class='author-avatar'>
                       <img width="80" height="80" alt="" src="{{ t.author.avatar | relative_url }}" />
@@ -389,22 +389,22 @@ clients:
     </div>
   </div>
 </div>
-<div class="full no-padding">
-  <div class="clients">
+<div class="editable full no-padding">
+  <div class="editable clients">
     <div class='editable row'>
       {% for client in page.clients %}
         <div class='editable large-3 medium-6 small-6 columns'>
-          <div class="client">
+          <div class="editable client">
             <a href="javascript:void(0)"><img alt="" src="{{ client | relative_url }}" /></a>
           </div>
         </div>
       {% endfor %}
     </div>
   </div>
-  <div class="four spacing"></div>
+  <div class="editable four spacing"></div>
 </div> -->
 
-<div class="four spacing "></div>
+<div class="editable four spacing "></div>
 <a id='contact'></a>
 <!-- {% include contact-form.html %}
  -->
