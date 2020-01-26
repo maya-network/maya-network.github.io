@@ -1,31 +1,26 @@
 ---
-layout: blog
+layout: page
 ---
 
-<div class='mod modBlogPost big no_bg'>
-  {% if page.images and page.images[0] %}
-    <div class='images'>
-      {% for image in page.images  %}
-        <div class='image'><img width="800" height="533" alt="" src="{{ image | relative_url }}" /></div>
-      {% endfor %}
+<div class="post">
+  <!-- Wrapper Start -->
+  <section id="intro" style="border: 1px dotted #ddd;">
+    <div class="container">
+      <div class="row">
+        <div>
+          <div class="block">
+            <h1>{{ page.title }}</h1>
+            <div class="post-info-wrapper">
+              <p class="italic">By <span class="bold">{{ page.author }}</span> on <span class="bold">{{ page.date | date: "%B %-d, %Y" }}</span></p>
+            </div>
+            <hr />
+            <p>{{ content }}</p>
+          </div>
+        </div><!-- .col-md-7 close -->
+      </div>
     </div>
-  {% endif %}
-
-  <div class='content'>
-    {% include post-meta.html post=page %}
-    
-    <h3 class="deco">{{ page.title }}</h3>
-
-    {{ content }}
-  </div>
+  </section>
 </div>
-
-<a id='comments'></a>
-
-<div class='comments-wrapper'>
-
-  {% if site.disqus.shortname %}
-    {% include disqus_comments.html %}
-  {% endif %}
-
-</div>
+<p class="center-text" style="padding: 30px;">
+  <a href="{{ site.baseurl }}/blog">Back to blog</a>
+</p>
